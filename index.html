@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SatKap | Alışverişin En Kolay Yolu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">SAT<span>KAP</span></div>
+            <div class="search-area">
+                <input type="text" placeholder="Kelime, ilan no ara...">
+                <button type="button" style="padding: 10px; background: #333; color: white; border: none; border-radius: 0 4px 4px 0; cursor: pointer;">Ara</button>
+            </div>
+            <nav>
+                <a href="#" class="login-btn">Giriş Yap</a>
+                <span style="color: #ddd;">|</span>
+                <a href="#" class="register-btn">Hesap Aç</a>
+                <button class="add-listing-btn">Ücretsiz İlan Ver</button>
+            </nav>
+        </div>
+    </header>
+
+    <section class="welcome-section">
+        <h1>Aradığın her şey burada!</h1>
+        <p>Emlak, Vasıta, Alışveriş ve daha fazlası...</p>
+    </section>
+
+    <main>
+
+        <aside class="categories">
+            <h3>Kategoriler</h3>
+            <ul>
+                <li><a href="#" id="tum-ilanlar-link">📋 Tüm İlanlar</a></li>
+                <li><a href="#" id="emlak-link">🏠 Emlak</a></li>
+                <li><a href="#" id="vasita-link">🚗 Vasıta</a></li>
+                <li><a href="#" id="ikinci-el-link">🛍️ İkinci El ve Sıfır</a></li>
+                <li><a href="#" id="elektronik-link">🔌 Elektronik</a></li>
+            </ul>
+        </aside>
+
+        <section class="ads-section">
+            
+            <div style="background: #fff; padding: 15px; margin-bottom: 20px; border-radius: 8px; border-bottom: 2px solid #ff8c00; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+                <h2 style="margin: 0; color: #333; font-size: 18px;">Vitrindeki İlanlar</h2>
+            </div>
+
+            <div class="ads-grid">
+
+                <div class="ad-card vasita" data-phone="0532 111 22 33">
+                    <div class="ad-image"><img src="resimler/araba1.jpg" alt="Araba"></div>
+                    <div class="ad-info"><h4>Sahibinden Satılık SUV</h4><p class="price">2.450.000 TL</p><p class="location">İstanbul / Beşiktaş</p></div>
+                </div>
+                <div class="ad-card vasita" data-phone="0532 111 22 33">
+                    <div class="ad-image"><img src="resimler/araba2.jpg" alt="Araba"></div>
+                    <div class="ad-info"><h4>Klasik Nostaljik Vosvos</h4><p class="price">420.000 TL</p><p class="location">İzmir / Karşıyaka</p></div>
+                </div>
+                <div class="ad-card vasita" data-phone="0532 111 22 33">
+                    <div class="ad-image"><img src="resimler/araba3.jpg" alt="Araba"></div>
+                    <div class="ad-info"><h4>Renault Clio 1.0 TCe</h4><p class="price">890.000 TL</p><p class="location">Bursa / Nilüfer</p></div>
+                </div>
+                <div class="ad-card vasita" data-phone="0532 111 22 33">
+                    <div class="ad-image"><img src="resimler/araba4.jpg" alt="Araba"></div>
+                    <div class="ad-info"><h4>Süper Spor Lüks Araç</h4><p class="price">15.000.000 TL</p><p class="location">Muğla / Bodrum</p></div>
+                </div>
+                <div class="ad-card vasita" data-phone="0532 111 22 33">
+                    <div class="ad-image"><img src="resimler/araba5.jpg" alt="Araba"></div>
+                    <div class="ad-info"><h4>BMW 4 Serisi Gran Coupe</h4><p class="price">2.850.000 TL</p><p class="location">Ankara / Çankaya</p></div>
+                </div>
+                <div class="ad-card vasita" data-phone="0532 111 22 33">
+                    <div class="ad-image"><img src="resimler/araba6.jpg" alt="Araba"></div>
+                    <div class="ad-info"><h4>Audi A5 Sportback</h4><p class="price">2.600.000 TL</p><p class="location">Adana / Seyhan</p></div>
+                </div>
+                <div class="ad-card vasita" data-phone="0532 111 22 33">
+                    <div class="ad-image"><img src="resimler/araba7.jpg" alt="Araba"></div>
+                    <div class="ad-info"><h4>Modifiyeli Sarı Coupe</h4><p class="price">1.950.000 TL</p><p class="location">Antalya / Muratpaşa</p></div>
+                </div>
+                <div class="ad-card vasita" data-phone="0532 111 22 33">
+                    <div class="ad-image"><img src="resimler/araba8.jpg" alt="Araba"></div>
+                    <div class="ad-info"><h4>Özel Renk BMW M3</h4><p class="price">4.200.000 TL</p><p class="location">Gaziantep / Şahinbey</p></div>
+                </div>
+                <div class="ad-card vasita" data-phone="0532 111 22 33">
+                    <div class="ad-image"><img src="resimler/araba9.jpg" alt="Araba"></div>
+                    <div class="ad-info"><h4>BMW M4 Competition</h4><p class="price">5.100.000 TL</p><p class="location">Trabzon / Ortahisar</p></div>
+                </div>
+                <div class="ad-card vasita" data-phone="0532 111 22 33">
+                    <div class="ad-image"><img src="resimler/araba10.jpg" alt="Araba"></div>
+                    <div class="ad-info"><h4>Mercedes-Benz C200d</h4><p class="price">2.350.000 TL</p><p class="location">Kayseri / Melikgazi</p></div>
+                </div>
+
+                <div class="ad-card elektronik">
+                    <div class="ad-image"><img src="resimler/kamera1.jpg" alt="Kamera"></div>
+                    <div class="ad-info"><h4>Nostaljik Analog Fotoğraf Makinesi</h4><p class="price">2.800 TL</p><p class="location">İzmir / Bornova</p></div>
+                </div>
+                <div class="ad-card elektronik">
+                    <div class="ad-image"><img src="resimler/kamera2.jpg" alt="Kamera"></div>
+                    <div class="ad-info"><h4>Fotoğraf Makinesi Lensi</h4><p class="price">3.200 TL</p><p class="location">Ankara / Çankaya</p></div>
+                </div>
+                <div class="ad-card elektronik">
+                    <div class="ad-image"><img src="resimler/kamera3.jpg" alt="Kamera"></div>
+                    <div class="ad-info"><h4>Olympus Mju II Analog Kamera</h4><p class="price">4.500 TL</p><p class="location">İstanbul / Kadıköy</p></div>
+                </div>
+                <div class="ad-card elektronik">
+                    <div class="ad-image"><img src="resimler/kamera4.jpg" alt="Kamera"></div>
+                    <div class="ad-info"><h4>Nikon PowerShot Eski Seri</h4><p class="price">1.850 TL</p><p class="location">Bursa / Nilüfer</p></div>
+                </div>
+                <div class="ad-card elektronik">
+                    <div class="ad-image"><img src="resimler/kamera5.jpg" alt="Kamera"></div>
+                    <div class="ad-info"><h4>Sony A7 III Profesyonel Kamera</h4><p class="price">55.000 TL</p><p class="location">Muğla / Bodrum</p></div>
+                </div>
+                <div class="ad-card elektronik">
+                    <div class="ad-image"><img src="resimler/kamera6.jpg" alt="Kamera"></div>
+                    <div class="ad-info"><h4>Minolta Cep Tipi Analog Makine</h4><p class="price">2.400 TL</p><p class="location">Antalya / Muratpaşa</p></div>
+                </div>
+                <div class="ad-card elektronik">
+                    <div class="ad-image"><img src="resimler/kamera7.jpg" alt="Kamera"></div>
+                    <div class="ad-info"><h4>Sony Cybershot Dijital Kompakt</h4><p class="price">3.100 TL</p><p class="location">Trabzon / Ortahisar</p></div>
+                </div>
+                <div class="ad-card elektronik">
+                    <div class="ad-image"><img src="resimler/kamera8.jpg" alt="Kamera"></div>
+                    <div class="ad-info"><h4>Sony Kırmızı Şık Fotoğraf Makinesi</h4><p class="price">2.250 TL</p><p class="location">Gaziantep / Şahinbey</p></div>
+                </div>
+                <div class="ad-card elektronik">
+                    <div class="ad-image"><img src="resimler/kamera9.jpg" alt="Kamera"></div>
+                    <div class="ad-info"><h4>Panasonic Lumix Dijital Kamera</h4><p class="price">3.800 TL</p><p class="location">Eskişehir / Tepebaşı</p></div>
+                </div>
+                <div class="ad-card elektronik">
+                    <div class="ad-image"><img src="resimler/kamera10.jpg" alt="Kamera"></div>
+                    <div class="ad-info"><h4>Sony Cybershot Pembe Kamera</h4><p class="price">2.600 TL</p><p class="location">Adana / Seyhan</p></div>
+                </div>
+                    <div class="ad-card elektronik">
+                    <div class="ad-image"><img src="resimler/telefon1.jpg" alt="Telefon"></div>
+                    <div class="ad-info"><h4>Samsung 128 GB</h4><p class="price">18.500 TL</p><p class="location">İstanbul / Kadıköy</p></div>
+                </div>
+                <div class="ad-card elektronik">
+                    <div class="ad-image"><img src="resimler/telefon2.jpg" alt="Telefon"></div>
+                    <div class="ad-info"><h4>İphone 13 Gri 128 GB</h4><p class="price">34.000 TL</p><p class="location">İzmir / Bornova</p></div>
+                </div>
+                <div class="ad-card elektronik">
+                    <div class="ad-image"><img src="resimler/telefon3.jpg" alt="Telefon"></div>
+                    <div class="ad-info"><h4>Samsung S22 64 GB</h4><p class="price">17.250 TL</p><p class="location">Ankara / Çankaya</p></div>
+                </div>
+                <div class="ad-card elektronik">
+                    <div class="ad-image"><img src="resimler/telefon4.jpg" alt="Telefon"></div>
+                    <div class="ad-info"><h4>İphone 12</h4><p class="price">21.500 TL</p><p class="location">Bursa / Nilüfer</p></div>
+                </div>
+                <div class="ad-card elektronik">
+                    <div class="ad-image"><img src="resimler/telefon5.jpg" alt="Telefon"></div>
+                    <div class="ad-info"><h4>Samsung S24 128 GB</h4><p class="price">23.000 TL</p><p class="location">Adana / Seyhan</p></div>
+                </div>
+                <div class="ad-card elektronik">
+                    <div class="ad-image"><img src="resimler/telefon6.jpg" alt="Telefon"></div>
+                    <div class="ad-info"><h4>Samsung XR 64 GB</h4><p class="price">12.500 TL</p><p class="location">Antalya / Muratpaşa</p></div>
+                </div>
+                <div class="ad-card elektronik">
+                    <div class="ad-image"><img src="resimler/telefon7.jpg" alt="Telefon"></div>
+                    <div class="ad-info"><h4>İphone 13S 128 GB</h4><p class="price">6.500 TL</p><p class="location">Eskişehir / Tepebaşı</p></div>
+                </div>
+                <div class="ad-card elektronik">
+                    <div class="ad-image"><img src="resimler/telefon8.jpg" alt="Telefon"></div>
+                    <div class="ad-info"><h4>Samsung S24 Pro</h4><p class="price">9.800 TL</p><p class="location">Trabzon / Ortahisar</p></div>
+                </div>
+                <div class="ad-card elektronik">
+                    <div class="ad-image"><img src="resimler/telefon9.jpg" alt="Telefon"></div>
+                    <div class="ad-info"><h4>iPhone SE 2022 64 GB</h4><p class="price">14.500 TL</p><p class="location">Gaziantep / Şahinbey</p></div>
+                </div>
+                <div class="ad-card elektronik">
+                    <div class="ad-image"><img src="resimler/telefon10.jpg" alt="Telefon"></div>
+                    <div class="ad-info"><h4>Samsung Galaxy A54 5G</h4><p class="price">13.900 TL</p><p class="location">Muğla / Bodrum</p></div>
+                </div>
+            <div class="ad-card ikinci-el">
+                    <div class="ad-image"><img src="resimler/ayakkabi1.jpg" alt="Ayakkabı"></div>
+                    <div class="ad-info"><h4>Topuklu Ayakkabı (42 Numara)</h4><p class="price">2.400 TL</p><p class="location">İstanbul / Kadıköy</p></div>
+                </div>
+                <div class="ad-card ikinci-el">
+                    <div class="ad-image"><img src="resimler/ayakkabi2.jpg" alt="Ayakkabı"></div>
+                    <div class="ad-info"><h4>ZARA Spor Ayakkabı</h4><p class="price">1.950 TL</p><p class="location">İzmir / Bornova</p></div>
+                </div>
+                <div class="ad-card ikinci-el">
+                    <div class="ad-image"><img src="resimler/ayakkabi3.jpg" alt="Ayakkabı"></div>
+                    <div class="ad-info"><h4>Converse Chuck Taylor High</h4><p class="price">1.200 TL</p><p class="location">Ankara / Çankaya</p></div>
+                </div>
+                <div class="ad-card ikinci-el">
+                    <div class="ad-image"><img src="resimler/ayakkabi4.jpg" alt="Ayakkabı"></div>
+                    <div class="ad-info"><h4>Puma Slipstream Spor Ayakkabı</h4><p class="price">1.850 TL</p><p class="location">Bursa / Nilüfer</p></div>
+                </div>
+                <div class="ad-card ikinci-el">
+                    <div class="ad-image"><img src="resimler/ayakkabi5.jpg" alt="Ayakkabı"></div>
+                    <div class="ad-info"><h4>New Balance 530 Retro</h4><p class="price">3.100 TL</p><p class="location">Antalya / Muratpaşa</p></div>
+                </div>
+                <div class="ad-card ikinci-el">
+                    <div class="ad-image"><img src="resimler/ayakkabi6.jpg" alt="Ayakkabı"></div>
+                    <div class="ad-info"><h4>Vans Old Skool Siyah Beyaz</h4><p class="price">1.100 TL</p><p class="location">Eskişehir / Tepebaşı</p></div>
+                </div>
+                <div class="ad-card ikinci-el">
+                    <div class="ad-image"><img src="resimler/kiyafet1.png" alt="Kıyafet"></div>
+                    <div class="ad-info"><h4>Beyaz Volanlı Etek</h4><p class="price">1.200 TL</p><p class="location">Şanlıurfa/Karaköprü</p></div>
+                </div>
+                <div class="ad-card ikinci-el">
+                    <div class="ad-image"><img src="resimler/kiyafet2.png" alt="Kıyafet"></div>
+                    <div class="ad-info"><h4>Kahverengi Eteki Takım</h4><p class="price">2.850 TL</p><p class="location">İstanbul/Küçükçekmece</p></div>
+                </div>
+                <div class="ad-card ikinci-el">
+                    <div class="ad-image"><img src="resimler/kiyafet3.png" alt="Kıyafet"></div>
+                    <div class="ad-info"><h4>Siyah Kadın Yelek</h4><p class="price">850 TL</p><p class="location">Muğla/Datça</p></div>
+                </div>
+                <div class="ad-card ikinci-el">
+                    <div class="ad-image"><img src="resimler/kiyafet4.png" alt="Kıyafet"></div>
+                    <div class="ad-info"><h4>Kadın Kimano Takım</h4><p class="price">2.550 TL</p><p class="location">İstanbul/Maltepe</p></div>
+                </div>
+                <div class="ad-card ikinci-el">
+                    <div class="ad-image"><img src="resimler/kiyafet5.png" alt="Kıyafet"></div>
+                    <div class="ad-info"><h4>Erkek Tişört</h4><p class="price">250 TL</p><p class="location">Bursa / Nilüfer</p></div>
+                </div>
+                <div class="ad-card ikinci-el">
+                    <div class="ad-image"><img src="resimler/kiyafet6.png" alt="Kıyafet"></div>
+                    <div class="ad-info"><h4>Kadın Füme Elbise</h4><p class="price">2.480 TL</p><p class="location">Kocaeli/Gebze</p></div>
+                </div>
+                <div class="ad-card ikinci-el">
+                    <div class="ad-image"><img src="resimler/kiyafet7.png" alt="Kıyafet"></div>
+                    <div class="ad-info"><h4>Erkek Pijama Takımı Mavi</h4><p class="price">650 TL</p><p class="location">Ankara/Hamamönü</p></div>
+                </div>
+                <div class="ad-card vasita">
+                    <div class="ad-image"><img src="resimler/bisiklet1.jpg" alt="Bisiklet"></div>
+                    <div class="ad-info"><h4>Sahibinden Satılık Bisiklet</h4><p class="price">2.450 TL</p><p class="location">İstanbul / Sultanbeyli</p></div>
+                </div>
+                <div class="ad-card vasita">
+                    <div class="ad-image"><img src="resimler/bisiklet2.jpg" alt="Bisiklet"></div>
+                    <div class="ad-info"><h4>Satılık Dağ Bisikleti</h4><p class="price">3.200 TL</p><p class="location">Kocaeli/İzmit</p></div>
+                </div>
+                <div class="ad-card emlak">
+                    <div class="ad-image"><img src="resimler/ev1.jpg" alt="Ev"></div>
+                    <div class="ad-info"><h4>Sahibinden Satılık Müstakil Ev</h4><p class="price">2.850.000 TL</p><p class="location">İstanbul / Kağıthane</p></div>
+                </div>
+                <div class="ad-card emlak">
+                    <div class="ad-image"><img src="resimler/ev2.jpg" alt="Ev"></div>
+                    <div class="ad-info"><h4>Sahibinden Satılık Yalı</h4><p class="price">12.850.000 TL</p><p class="location">İstanbul / Fatih</p></div>
+                </div>
+                <div class="ad-card emlak">
+                    <div class="ad-image"><img src="resimler/ev3.jpg" alt="Ev"></div>
+                    <div class="ad-info"><h4>Satılık Apartman Dairesi</h4><p class="price">1.850.000 TL</p><p class="location">İstanbul / Tuzla</p></div>
+                </div>
+                <div class="ad-card emlak">
+                    <div class="ad-image"><img src="resimler/ev4.jpg" alt="Ev"></div>
+                    <div class="ad-info"><h4>Kiralık Apartman Dairesi</h4><p class="price">50.000(ay) TL</p><p class="location">Şanlıurfa/Haliliye</p></div>
+                </div>
+                <div class="ad-card emlak">
+                    <div class="ad-image"><img src="resimler/ev5.jpg" alt="Ev"></div>
+                    <div class="ad-info"><h4>Sahibinden Satılık Apartman</h4><p class="price">13.650.000 TL</p><p class="location">Adana/Ceyhan</p></div>
+                </div>
+                <div class="ad-card elektronik">
+                    <div class="ad-image"><img src="resimler/bilgisayar1.jpg" alt="Bilgisayar"></div>
+                    <div class="ad-info"><h4>Mac Air Bilgisayar</h4><p class="price">54.500 TL</p><p class="location">Gaziantep / Oğuzeli</p></div>
+                </div>
+             <div class="ad-card emlak">
+                    <div class="ad-image"><img src="resimler/dukkan1.jpg" alt="Dükkan"></div>
+                    <div class="ad-info"><h4>Cadde Üzeri Devren Kiralık Kafe</h4><p class="price">450.000 TL</p><p class="location">İstanbul / Beşiktaş</p></div>
+                </div>
+                <div class="ad-card emlak">
+                    <div class="ad-image"><img src="resimler/dukkan2.jpg" alt="Dükkan"></div>
+                    <div class="ad-info"><h4>Merkezi Konumda Satılık Mağaza</h4><p class="price">8.500.000 TL</p><p class="location">Ankara / Çankaya</p></div>
+                </div>
+                <div class="ad-card emlak">
+                    <div class="ad-image"><img src="resimler/dukkan3.jpg" alt="Dükkan"></div>
+                    <div class="ad-info"><h4>Kira Getirili Köşe Başı Dükkan</h4><p class="price">5.250.000 TL</p><p class="location">İzmir / Karşıyaka</p></div>
+                </div>
+                <div class="ad-card emlak">
+                    <div class="ad-image"><img src="resimler/dukkan4.jpg" alt="Dükkan"></div>
+                    <div class="ad-info"><h4>Giriş Kat Düz Giriş Ofis & Büro</h4><p class="price">3.100.000 TL</p><p class="location">Bursa / Nilüfer</p></div>
+                </div>
+                <div class="ad-card emlak">
+                    <div class="ad-image"><img src="resimler/dukkan5.jpg" alt="Dükkan"></div>
+                    <div class="ad-info"><h4>AVM İçi Popüler Lokasyonda Dükkan</h4><p class="price">12.000.000 TL</p><p class="location">Antalya / Muratpaşa</p></div>
+                </div>
+                <div class="ad-card elektronik">
+                    <div class="ad-image"><img src="resimler/kulaklık1.jpg" alt="Kulaklık"></div>
+                    <div class="ad-info"><h4>Kablosuz Bluetooth Kulak Üstü Kulaklık</h4><p class="price">1.850 TL</p><p class="location">İstanbul / Kadıköy</p></div>
+                </div>
+                <div class="ad-card elektronik">
+                    <div class="ad-image"><img src="resimler/kulaklık2.jpg" alt="Kulaklık"></div>
+                    <div class="ad-info"><h4>Gürültü Engelleyici ANC Kulaklık</h4><p class="price">3.200 TL</p><p class="location">Ankara / Çankaya</p></div>
+                </div>
+                <div class="ad-card elektronik">
+                    <div class="ad-image"><img src="resimler/kulaklık3.jpg" alt="Kulaklık"></div>
+                    <div class="ad-info"><h4>Oyuncu Kulaklığı (RGB Mikrofonlu)</h4><p class="price">1.450 TL</p><p class="location">İzmir / Bornova</p></div>
+                </div>
+                <div class="ad-card elektronik">
+                    <div class="ad-image"><img src="resimler/kulaklık4.jpg" alt="Kulaklık"></div>
+                    <div class="ad-info"><h4>TWS Bluetooth Kulak İçi Kulaklık</h4><p class="price">950 TL</p><p class="location">Bursa / Nilüfer</p></div>
+                </div>
+                <div class="ad-card elektronik">
+                    <div class="ad-image"><img src="resimler/kulaklık5.jpg" alt="Kulaklık"></div>
+                    <div class="ad-info"><h4>Stüdyo Tipi Profesyonel Kulaklık</h4><p class="price">4.100 TL</p><p class="location">Antalya / Muratpaşa</p></div>
+                </div>
+                <div class="ad-card ikinci-el">
+                    <div class="ad-image"><img src="resimler/saat1.jpg" alt="Saat"></div>
+                    <div class="ad-info"><h4>Klasik Deri Kordonlu Erkek Saati</h4><p class="price">2.400 TL</p><p class="location">İstanbul / Beşiktaş</p></div>
+                </div>
+                <div class="ad-card ikinci-el">
+                    <div class="ad-image"><img src="resimler/saat2.jpg" alt="Saat"></div>
+                    <div class="ad-info"><h4>Minimalist Kol Saati</h4><p class="price">1.250 TL</p><p class="location">İzmir / Karşıyaka</p></div>
+                </div>
+                <div class="ad-card ikinci-el">
+                    <div class="ad-image"><img src="resimler/saat3.jpg" alt="Saat"></div>
+                    <div class="ad-info"><h4>Akıllı Saat (Spor Takip Modlu)</h4><p class="price">950 TL</p><p class="location">Ankara / Çankaya</p></div>
+                </div>
+            </div>
+           
+
+             </section> </main> <footer>
+        <footer style="background: #333; color: #fff; padding: 40px 0 20px 0; margin-top: 40px; width: 100%;">
+        <div class="container" style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 30px;">
+            
+            <div style="flex: 1; min-width: 250px;">
+                <h3 style="color: #ff8c00; margin-bottom: 15px;">SatKap</h3>
+                <p style="font-size: 14px; color: #ccc; max-width: 300px; line-height: 1.6;">Güvenilir ve hızlı alışverişin en doğru adresi. Aradığınız her şeye tek tıkla ulaşın.</p>
+            </div>
+            
+            <div style="flex: 1; min-width: 150px;">
+                <h4 style="color: #ff8c00; margin-bottom: 15px;">Kategoriler</h4>
+                <ul style="list-style: none; padding: 0; font-size: 14px; line-height: 2;">
+                    <li><a href="#" style="color: #ccc; text-decoration: none;">🏠 Emlak</a></li>
+                    <li><a href="#" style="color: #ccc; text-decoration: none;">🚗 Vasıta</a></li>
+                    <li><a href="#" style="color: #ccc; text-decoration: none;">🔌 Elektronik</a></li>
+                    <li><a href="#" style="color: #ccc; text-decoration: none;">🛍️ İkinci El ve Sıfır</a></li>
+                </ul>
+            </div>
+            
+            <div style="flex: 1; min-width: 200px;">
+                <h4 style="color: #ff8c00; margin-bottom: 15px;">İletişim</h4>
+                <p style="font-size: 14px; color: #ccc; margin-bottom: 8px;">📍 Merkez / Şanlıurfa</p>
+                <p style="font-size: 14px; color: #ccc; margin-bottom: 8px;">📞 Müşteri Hizmetleri: 0850 124 00 00</p>
+                <p style="font-size: 14px; color: #ccc;">✉️ E-posta: destek@satkap.com</p>
+            </div>
+            
+        </div>
+        
+        <hr style="border: 0; border-top: 1px solid #444; margin: 30px 0 15px 0;">
+        
+        <div style="text-align: center; font-size: 13px; color: #aaa;">
+            <p>&copy; 2026 SatKap. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+<div id="login-modal" class="custom-modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('login-modal')">&times;</span>
+            <h2>Giriş Yap</h2>
+            <form onsubmit="simuleGiris(event)">
+                <input type="email" placeholder="E-posta Adresiniz" required>
+                <input type="password" placeholder="Şifreniz" required>
+                <button type="submit" class="modal-submit-btn">Giriş Yap</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="register-modal" class="custom-modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('register-modal')">&times;</span>
+            <h2>Hesap Aç</h2>
+            <form onsubmit="simuleKayit(event)">
+                <input type="text" placeholder="Adınız Soyadınız" required>
+                <input type="email" placeholder="E-posta Adresiniz" required>
+                <input type="password" placeholder="Şifreniz" required>
+                <button type="submit" class="modal-submit-btn">Kayıt Ol</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="add-listing-modal" class="custom-modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('add-listing-modal')">&times;</span>
+            <h2>Ücretsiz İlan Ver</h2>
+            <form onsubmit="simuleIlanVer(event)">
+                <input type="text" placeholder="İlan Başlığı" required>
+                <select required>
+                    <option value="">Kategori Seçin</option>
+                    <option value="emlak">Emlak</option>
+                    <option value="vasita">Vasıta</option>
+                    <option value="ikinci-el">İkinci El ve Sıfır</option>
+                    <option value="elektronik">Elektronik</option>
+                </select>
+                <input type="text" placeholder="Fiyat (TL)" required>
+                <input type="text" placeholder="Konum (İl / İlçe)" required>
+                <button type="submit" class="modal-submit-btn">İlanı Yayınla</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <div id="ad-detail-modal" class="custom-modal" style="display: none;">
+        <div class="modal-content" style="max-width: 500px; padding: 25px;">
+            <span class="close-btn" onclick="closeModal('ad-detail-modal')">&times;</span>
+            
+            <div id="modal-detail-body" style="text-align: center;">
+                <div id="modal-detail-image" style="width: 100%; height: 250px; overflow: hidden; border-radius: 6px; margin-bottom: 15px;">
+                    <img src="" alt="" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <h2 id="modal-detail-title" style="font-size: 20px; color: #333; margin-bottom: 10px; border-bottom: none; padding-bottom: 0;"></h2>
+                <p id="modal-detail-price" style="font-size: 24px; color: #ff8c00; font-weight: bold; margin-bottom: 10px;"></p>
+                <p id="modal-detail-location" style="color: #777; font-size: 14px; margin-bottom: 15px;"></p>
+                
+                <hr style="border: 0; border-top: 1px solid #eee; margin-bottom: 15px;">
+                
+                <p style="font-size: 14px; color: #555; line-height: 1.6; text-align: left; background: #f9f9f9; padding: 10px; border-radius: 4px;">
+                    <strong>İlan Açıklaması:</strong> Bu ilan aktif ve günceldir. Detaylı bilgi almak, pazarlık yapmak veya ürünü yakından görmek için ilan sahibiyle iletişime geçebilirsiniz.
+                </p>
+                
+                <button id="modal-detail-phone-btn" class="modal-submit-btn" style="margin-top: 15px;">Satıcıyla İletişime Geç</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
